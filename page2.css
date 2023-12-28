@@ -1,0 +1,29 @@
+.video{
+    width: 23vw;
+    border-top-right-radius: 4vw;
+    border-bottom-right-radius: 4vw;
+    border-top-left-radius: 4vw;
+    border-bottom-left-radius: 4vw;
+    /* height: 40vw; */
+
+}
+.page2_position{
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    bottom: -9vw;
+    /* right: 4vw; */
+    
+}
+.main_page2_video{
+    position: relative;
+    right: 5vw;
+    
+}
+.text_page2_main{
+    text-align: center;
+    padding: 4vw;
+    padding-right: 13vw;
+}

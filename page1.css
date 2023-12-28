@@ -2,10 +2,12 @@
     padding: 0%;
     margin: 0%;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
-body{
+
+body {
     background-image: url("main_logo.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -14,10 +16,14 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     
+
+
 }
+
+
 .page {
-    width: auto;
-    height: 60vw;
+    width: 85vw;
+    height: 53vw;
     margin: 0rem 7vw;
     background-color: #F1E6E4;
 
@@ -25,13 +31,22 @@ body{
 
 /* navbar portion */
 .navbar {
-    background-color: #F9E1DC;
-    /*#F1E6E4*/
+    /* position: absolute; */
+    background-color:  #F9E1DC;
+    /*#F1E6E4 #F9E1DC*/
     height: 6vw;
     width: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* position: ; */
+}
+.navbar{
+    position: fixed;
+    height: 6vw;
+    width: 84vw;
+    z-index: 2;
+    justify-content: end;
 }
 
 .navbar ul {
@@ -46,6 +61,8 @@ body{
     /* text-decoration: none; */
 
     /* text-decoration: none; */
+    /* position: absolute; */
+
 }
 
 a {
@@ -58,22 +75,28 @@ a {
 a:hover {
 
     opacity: 1;
+    color: black;
+  
 
 
 }
+a:active{
+color: black;
+}
 
 .logo img {
-    /* background-color: aliceblue; */
-    width: 8vw;
-    height: 8vw;
+    background-color: aliceblue;
+    width: 5vw;
+    height: 5vw;
     /* background-image: url("logo.jpg"); */
     background-size: contain;
     border-radius: 50%;
     /* position: relative; */
     /* bottom: -3.25vw; */
-    position: relative;
-    bottom: -3vw;
-    right: -4vw;
+    position: fixed;
+    z-index: 5;
+    top: 0.6vw;
+    left: 10vw;
     box-shadow: 0.2vw 0.5vw 1vw black;
 }
 
@@ -86,34 +109,40 @@ a:hover {
     display: flex;
     /* flex-wrap: wrap; */
     justify-content: space-between;
+    position: relative;
+    bottom: -7vw;
+    
 
 
 }
 
 .muddbery_main {
-    font-size: 3vw;
-    line-height: 4vw;
+    font-size: 3.9vw;
+    line-height: 4.4vw;
     text-shadow: 0.4vw 0.4vw 0.3vw #EFB0A3;
 }
 
 .muddbery_main+h3 {
-    font-size: 1.7vw;
-    line-height: 2vw;
+    font-size: 1.8vw;
+    line-height: 2.3vw;
 }
 
 .muddbery_main+h3+h3 {
-    font-size: 2vw;
-    line-height: 2.8vw;
+    font-size: 2.1vw;
+    line-height: 2.9vw;
 }
+
 .muddbery_main+h3+h3+h3 {
     font-size: 2vw;
-    line-height: 2.8vw;
+    line-height: 2.4vw;
 }
+
 .muddbery_main+h3+h3+h3+h3 {
     font-size: 2vw;
     line-height: 3vw;
 }
-.icons{
+
+.icons {
     line-height: 3vw;
     font-size: 2vw;
     width: 10vw;
@@ -130,8 +159,8 @@ a:hover {
     justify-content: center;
     align-items: center;
     position: relative;
-    top: -1vw;
-    right: -2vw;
+    top: -4vw;
+    right: -3vw;
 
 
 }
@@ -140,17 +169,20 @@ a:hover {
 span.mark {
     border-right: 2px solid rgb(249, 246, 246);
     animation: blink 0.6s step-end infinite;
-  }
-  
-  @keyframes blink {
+}
+
+@keyframes blink {
+
     from,
     to {
-      border-color: transparent;
+        border-color: transparent;
     }
+
     50% {
-      border-color: white;
+        border-color: white;
     }
-  }
+}
+
 /* close */
 
 .photo_main {
@@ -160,6 +192,9 @@ span.mark {
     background-image: url("with.png");
     background-repeat: no-repeat;
     background-size: contain;
+    position: relative;
+    top: -2.4vw;
+    right: -0.3vw;
 
 
 
@@ -167,9 +202,8 @@ span.mark {
 
 /* footer portion
  */
-.footer {
+/* .footer {
     background-color: #F1E6E4;
     width: auto;
     /* height: 10vw; */
-}
-
+} */
